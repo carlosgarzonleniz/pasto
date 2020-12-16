@@ -704,23 +704,7 @@
 		
 	
 	 
-	 var pastovul = {};
-	 $.getJSON('data/vulnerabilidad.geojson', function (geojson) {
-	  L.choropleth(geojson, {
-		valueProperty: 'TI',
-		scale: ['white', 'red'],
-		steps: 5,
-		mode: 'q',
-		style: {
-		  color: '#fff',
-		  weight: 2,
-		  fillOpacity: 0.8
-		},
-		onEachFeature: function (feature, layer) {
-
-		}
-	  }).addTo(map)
-	})
+	
 	
 
 	var osmUrl='http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
