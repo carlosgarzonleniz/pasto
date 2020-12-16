@@ -212,8 +212,11 @@
                         <td colspan="2">' + (feature.properties['COD_DANE'] !== null ? autolinker.link(feature.properties['COD_DANE'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
+                        <td colspan="2">' + (feature.properties['TI'] !== null ? autolinker.link(feature.properties['TI'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
                         <th scope="row">ti_1</th>\
-                        <td>' + (feature.properties['vulnerabilidad'] !== null ? autolinker.link(feature.properties['ti_1'].toLocaleString()) : '') + '</td>\
+                        <td>' + (feature.properties['ti_1'] !== null ? autolinker.link(feature.properties['ti_1'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
